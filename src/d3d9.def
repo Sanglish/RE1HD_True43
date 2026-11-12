@@ -1,0 +1,16 @@
+; Exports of the proxy. They match the real d3d9.dll's export names.
+; "name=internal" means: callers ask for `name`, we run the function `internal`.
+LIBRARY d3d9
+EXPORTS
+    Direct3DCreate9                = Hooked_Direct3DCreate9
+    D3DPERF_BeginEvent             = Fwd_D3DPERF_BeginEvent
+    D3DPERF_EndEvent               = Fwd_D3DPERF_EndEvent
+    D3DPERF_GetStatus              = Fwd_D3DPERF_GetStatus
+    D3DPERF_QueryRepeatFrame       = Fwd_D3DPERF_QueryRepeatFrame
+    D3DPERF_SetMarker              = Fwd_D3DPERF_SetMarker
+    D3DPERF_SetOptions             = Fwd_D3DPERF_SetOptions
+    D3DPERF_SetRegion              = Fwd_D3DPERF_SetRegion
+    Direct3DCreate9Ex              = Fwd_Direct3DCreate9Ex
+    Direct3DShaderValidatorCreate9 = Fwd_Direct3DShaderValidatorCreate9
+    PSGPError                      = Fwd_PSGPError
+    PSGPSampleTexture              = Fwd_PSGPSampleTexture
