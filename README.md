@@ -1,6 +1,6 @@
 Crops the 4:3 picture out of the game's 16:9 canvas and scales it uniformly to fill a 4:3 screen. Effectively removing the black bars without stretching the menu, inventory or videos. Set the game to its built-in 4:3 mode. Chains to d3d9_chain.dll if present (in case another mod changes d3d9.dll).
 
-https://i.imgur.com/o2cH8UB.jpeg
+![comparasion between vanilla with black borders top/bottom/left/right and the mod fix which has the entire game image in fullscreen](https://i.imgur.com/o2cH8UB.jpeg)
 
 Use with Fluffy Mod Manager or just swap the d3d9.dll in the game's directory with the one from this mod.
 
